@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header } from '/components';
+import { Header, Footer } from '/components';
 import styles from './layout.module.scss';
 
 export default function Layout({ title, keywords, description, children }) {
@@ -12,6 +12,7 @@ export default function Layout({ title, keywords, description, children }) {
       </Head>
       <Header />
       <div className={styles.container}>{children}</div>
+      <Footer />
     </div>
   );
 }
