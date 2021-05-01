@@ -1,13 +1,9 @@
-import Head from 'next/head';
+import { Layout } from '/components';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Club Events</title>
-        <meta name="description" content="Welcome to Club Events" />
-      </Head>
+    <Layout>
       <h1>Home</h1>
-    </div>
+    </Layout>
   );
 }
