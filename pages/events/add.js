@@ -9,7 +9,7 @@ import styles from '/styles/form.module.scss';
 export default function AddEventPage() {
   const [values, setValues] = useState({
     name: '',
-    perfomers: '',
+    performers: '',
     venue: '',
     address: '',
     date: '',
@@ -26,7 +26,7 @@ export default function AddEventPage() {
 
   const handleInputChange = ({ target }) => {
     const { name, value } = target;
-    serValues({ ...values, [name]: value });
+    setValues({ ...values, [name]: value });
   };
 
   return (
