@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Search } from '/components';
 import styles from './header.module.scss';
 
 export default function Header() {
@@ -12,6 +13,9 @@ export default function Header() {
         </Link>
       </div>
 
+      {/* search bar */}
+      <Search />
+      
       {/* navigation */}
       <nav>
         <ul>
